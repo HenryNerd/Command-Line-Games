@@ -11,6 +11,10 @@ win = 0
 active = 1
 
 os.system('cls')
+if ((int(debugMode)) == 1):
+            print("WARNING DEBUG MODE IS ON")
+            print("GAME WILL NOT FUNCTION NORMALY")
+            print("")
 print("  _____                 _ _   _                 ")
 print(" |  __ \               | | \ | |                ")
 print(" | |__) |__ _ _ __   __| |  \| |_   _ _ __ ___  ")
@@ -115,8 +119,14 @@ elif int(difficulty) == 3:
         if attempt > guesses:
             active = 0
             win = 0
+            print("     __")
+            print("  _ / /")
+            print(" (_) | ")
+            print("   | | ")
+            print("  _| | ")
+            print(" (_) | ")
+            print("    \_\ ")
             print("You lose! The number was", number)
 
-
-
 null = input("Press Enter to exit")
+os.system("python main.py")

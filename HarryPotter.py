@@ -103,7 +103,6 @@ if ((int(win)) == 1):
     print("    | | (_) | |_| |    \  /\  /  | | | | |")
     print("    |_|\___/ \__,_|     \/  \/   |_|_| |_|")
     print("")
-    null = input("Press Enter to Exit")
 elif ((int(win)) == 1):
     print("     __")
     print("  _ / /")
@@ -115,4 +114,6 @@ elif ((int(win)) == 1):
     print("       ")
     print("")
     print("You lost")
-    null = input("")
+
+null = input("Press Enter to Exit")
+os.system("python main.py")
