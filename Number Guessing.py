@@ -6,6 +6,7 @@ number = 0
 guess = 1
 difficutiy = 0
 win = 0
+active = 1
 
 os.system('cls')
 print("  _____                 _ _   _                 ")
@@ -21,10 +22,21 @@ print('3. Hard')
 print('4. Imposible')
 difficutiy = input("Please sellect your difficulty (1-4) ")
 
-if (difficutiy == 1):
+if ((int(difficutiy)) == 1):
     number = random.randint(1,10)
-    while guess < guesses:
-        os.system('cls')
-        print("Guess",guess,"/",guesses,)
-        print("")
-        guess = input("")
+    while (int(active)) == 1:
+         os.system('cls')
+         print("Guess",guess,"/",guesses,)
+         print(number)
+         print("")
+         guess = input("Your Guess ")
+         if ((int(guess)) == number):
+            win = 1
+            active = 0
+            print("Win")
+         elif ((int(guess)) == (int(guesses))):
+             active = 0
+             win = 0
+         else:
+            print("Wrong. Try Again")
+            guess = (int(guess)) + 1
