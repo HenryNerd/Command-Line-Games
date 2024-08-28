@@ -8,6 +8,7 @@ body {
     text-align: center;
     scale: 2;
     line-gap-override: 5px;
+    padding-top: 25px;
 }
 
 .title h1 {
@@ -15,16 +16,16 @@ body {
 }
 
 .continue {
-    flex-direction: column;
-    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
 }
 
 .continue button {
-    
     scale: 2;
     color: #333;
     padding-left: 35px;
     padding-right: 35px;
-    
     fill: whitesmoke;
+    border: 0px;
+    border-radius: 8px;
 }

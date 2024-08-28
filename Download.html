@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="Download.css">
-    <link rel="stylesheet" href="navbar.css">>
-
+    <link rel="stylesheet" href="download.css">
+    <link rel="stylesheet" href="navbar.css">
   </head>
   <body>
     <div class="topnav">
@@ -11,14 +10,31 @@
         <a class="active" href="Download.html">2. Download</a>
         <a href="Docs.html">3. Setup</a>
     </div>
+    <h1></h1>
     <div class="download">
-        <h2>Luancher (All Games)</h2>
+        <h2>Launcher (Luanches Games)</h2>
         <button id="Luancher">Download</button>
         <h2>Harry Potter Duel Game</h2>
         <button id="Harry Potter Duel Game">Download</button>
         <h2>Random Number Game</h2>
         <button id="Random Number Game">Download</button>
         <script src="download.js"></script>
+    </div>
+    <div class="continue">
+        <button id="continue">Continue</button>
+        <script>
+            document.getElementById('continue').addEventListener('click', function() {
+                window.location.href = 'docs.html';
+            });
+        </script>
+    </div>
+    <div class="back">
+        <button id="back">Back</button>
+        <script>
+            document.getElementById('back').addEventListener('click', function() {
+                window.location.href = 'index.html';
+            });
+        </script>
     </div>
   </body>
 </html>
