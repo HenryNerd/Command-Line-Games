@@ -1,15 +1,5 @@
 body {
     background-color: darkcyan;
-}
-
-.title {
     font-family: "Lucida Console", "Courier New", Monospace;
     color: whitesmoke;
-    text-align: center;
-    scale: 2;
-    line-gap-override: 5px;
-}
-
-.title h1 {
-    padding-top: 55px;
 }

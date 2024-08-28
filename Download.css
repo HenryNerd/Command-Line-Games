@@ -1,0 +1,25 @@
+.download {
+    color: whitesmoke;
+    padding-left: 300px;
+    padding-top: 25px;
+    font-family: "Lucida Console", "Courier New", Monospace;
+    scale: 1.4;
+}
+
+.download button {
+    background-color: #808080;
+    border-radius: 6px;
+    font-size: 16px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+    color: whitesmoke;
+    font-family: "Lucida Console", "Courier New", Monospace;
+}
+
+body {
+    background-color: darkcyan;
+    font-family: "Lucida Console", "Courier New", Monospace;
+    color: whitesmoke;
+}
