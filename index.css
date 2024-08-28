@@ -13,3 +13,18 @@ body {
 .title h1 {
     padding-top: 55px;
 }
+
+.continue {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.continue button {
+    
+    scale: 2;
+    color: #333;
+    padding-left: 35px;
+    padding-right: 35px;
+    
+    fill: whitesmoke;
+}
