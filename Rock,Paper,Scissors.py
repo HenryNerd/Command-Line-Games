@@ -1,3 +1,4 @@
+he
 import os
 import random
 gamemode = 0
