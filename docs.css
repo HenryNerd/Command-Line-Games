@@ -3,3 +3,28 @@ body {
     font-family: "Lucida Console", "Courier New", Monospace;
     color: whitesmoke;
 }
+
+code {
+    font-family: Consolas,"courier new";
+    color: crimson;
+    background-color: #000000;
+    padding: 2px;
+    font-size: 105%;
+  }
+
+  .back button {
+    color: #333;
+    fill: whitesmoke;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: "Lucida Console", "Courier New", Monospace;
+    border: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.back {
+    scale: 1.4; 
+    padding-left: 280px;
+    padding-top: 20px;
+}

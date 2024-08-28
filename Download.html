@@ -11,6 +11,8 @@
         <a href="Docs.html">3. Setup</a>
     </div>
     <h1></h1>
+    <h2>If you want to play 1 game only download that game</h2>
+    <h2>To play all games download all games and launcher</h2>
     <div class="download">
         <h2>Launcher (Luanches Games)</h2>
         <button id="Luancher">Download</button>
@@ -22,12 +24,16 @@
     </div>
     <div class="continue">
         <button id="continue">Continue</button>
-        <script>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('continue').addEventListener('click', function() {
                 window.location.href = 'docs.html';
             });
-        </script>
-    </div>
+        });
+    </script>
+
     <div class="back">
         <button id="back">Back</button>
         <script>
