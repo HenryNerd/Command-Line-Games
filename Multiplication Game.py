@@ -12,8 +12,10 @@ score = 0
 grade = 0
 
 os.system('cls')
-print("1. Addition")
-print("2. Multiplication")
+print("1. Multiplication")
+print("2. Addition")
+print("3. Subtraction")
+print("4. Division")
 mathMode = input("What Operation Would you like to practice")
 if int(mathMode) == 1:
     os.system('cls')
@@ -123,7 +125,7 @@ if int(mathMode) == 1:
         grade = "D"
     elif int(score) == 1:
         grade = "F"
-if int(mathMode) == 2:
+elif int(mathMode) == 2:
     print("              _     _ _ _   _                _____                      ")
     print("     /\      | |   | (_) | (_)              / ____|                     ")
     print("    /  \   __| | __| |_| |_ _  ___  _ __   | |  __  __ _ _ __ ___   ___ ")
@@ -200,6 +202,178 @@ if int(mathMode) == 2:
             correctAnswer = num1 + num2
             print("Round:",turn,"Mode: Very Hard")
             print("Equation: ",num1," + ",num2)
+            print("")
+            userAnswer = input("What is the Answer ")
+            turn = turn + 1
+            if int(userAnswer) == int(correctAnswer):
+                score = score + 1
+                print("Answer is correct")
+            else:
+                print("Answer is incorrect")
+        null = input("Press enter to continue ")
+
+elif int(mathMode) == 3:
+    print("   _____       _     _                  _   _                _____                      ")
+    print("  / ____|     | |   | |                | | (_)              / ____|                     ")
+    print(" | (___  _   _| |__ | |_ _ __ __ _  ___| |_ _  ___  _ __   | |  __  __ _ _ __ ___   ___ ")
+    print("  \___ \| | | | '_ \| __| '__/ _` |/ __| __| |/ _ \| '_ \  | | |_ |/ _` | '_ ` _ \ / _ \ ")
+    print("  ____) | |_| | |_) | |_| | | (_| | (__| |_| | (_) | | | | | |__| | (_| | | | | | |  __/")
+    print(" |_____/ \__,_|_.__/ \__|_|  \__,_|\___|\__|_|\___/|_| |_|  \_____|\__,_|_| |_| |_|\___|")
+    print("")
+    print("1. 1 Digit")
+    print("2. 2 Digits")
+    print("3. 3 Digits")
+    print("4. 4 Digits")
+    gamemode = input("What Gamemode would you like to play ")
+
+    if int(gamemode) == 1:
+        os.system('cls')
+        while int(turn) != 10:
+            os.system('cls')
+            num1 = random.randint(0,10)
+            num2 = random.randint(0,10)
+            correctAnswer = num1 - num2
+            print("Round:",turn,"Mode: Easy")
+            print("Equation: ",num1," - ",num2)
+            print("")
+            userAnswer = input("What is the Answer ")
+            turn = turn + 1
+            if int(userAnswer) == int(correctAnswer):
+                score = score + 1
+                print("Answer is correct")
+            else:
+                print("Answer is incorrect")
+        null = input("Press enter to continue ")
+    elif int(gamemode) == 2:
+        os.system('cls')
+        while int(turn) != 10:
+            os.system('cls')
+            num1 = random.randint(0,99)
+            num2 = random.randint(0,99)
+            correctAnswer = num1 - num2
+            print("Round:",turn,"Mode: Medium")
+            print("Equation: ",num1," - ",num2)
+            print("")
+            userAnswer = input("What is the Answer ")
+            turn = turn + 1
+            if int(userAnswer) == int(correctAnswer):
+                score = score + 1
+                print("Answer is correct")
+            else:
+                print("Answer is incorrect")
+        null = input("Press enter to continue ")
+    elif int(gamemode) == 3:
+        os.system('cls')
+        while int(turn) != 10:
+            os.system('cls')
+            num1 = random.randint(0,999)
+            num2 = random.randint(0,999)
+            correctAnswer = num1 - num2
+            print("Round:",turn,"Mode: Hard")
+            print("Equation: ",num1," - ",num2)
+            print("")
+            userAnswer = input("What is the Answer ")
+            turn = turn + 1
+            if int(userAnswer) == int(correctAnswer):
+                score = score + 1
+                print("Answer is correct")
+            else:
+                print("Answer is incorrect")
+        null = input("Press enter to continue ")
+    elif int(gamemode) == 4:
+        os.system('cls')
+        while int(turn) != 10:
+            os.system('cls')
+            num1 = random.randint(0,9999)
+            num2 = random.randint(0,9999)
+            correctAnswer = num1 - num2
+            print("Round:",turn,"Mode: Very Hard")
+            print("Equation: ",num1," - ",num2)
+            print("")
+            userAnswer = input("What is the Answer ")
+            turn = turn + 1
+            if int(userAnswer) == int(correctAnswer):
+                score = score + 1
+                print("Answer is correct")
+            else:
+                print("Answer is incorrect")
+        null = input("Press enter to continue ")
+elif int(mathMode) == 4:
+    print("  _____  _       _     _                _____                      ") 
+    print(" |  __ \(_)     (_)   (_)              / ____|                     ")
+    print(" | |  | |___   ___ ___ _  ___  _ __   | |  __  __ _ _ __ ___   ___ ")
+    print(" | |  | | \ \ / / / __| |/ _ \| '_ \  | | |_ |/ _` | '_ ` _ \ / _ \ ")
+    print(" | |__| | |\ V /| \__ \ | (_) | | | | | |__| | (_| | | | | | |  __/")
+    print(" |_____/|_| \_/ |_|___/_|\___/|_| |_|  \_____|\__,_|_| |_| |_|\___|")
+    print("1. 1 Digit")
+    print("2. 2 Digits")
+    print("3. 3 Digits")
+    print("4. 4 Digits")
+    gamemode = input("What Gamemode would you like to play ")
+
+    if int(gamemode) == 1:
+        os.system('cls')
+        while int(turn) != 10:
+            os.system('cls')
+            num1 = random.randint(0,10)
+            num2 = random.randint(0,10)
+            correctAnswer = num1 / num2
+            print("Round:",turn,"Mode: Easy")
+            print("Equation: ",num1," ÷ ",num2)
+            print("")
+            userAnswer = input("What is the Answer ")
+            turn = turn + 1
+            if int(userAnswer) == int(correctAnswer):
+                score = score + 1
+                print("Answer is correct")
+            else:
+                print("Answer is incorrect")
+        null = input("Press enter to continue ")
+    elif int(gamemode) == 2:
+        os.system('cls')
+        while int(turn) != 10:
+            os.system('cls')
+            num1 = random.randint(0,99)
+            num2 = random.randint(0,99)
+            correctAnswer = num1 / num2
+            print("Round:",turn,"Mode: Medium")
+            print("Equation: ",num1," ÷ ",num2)
+            print("")
+            userAnswer = input("What is the Answer ")
+            turn = turn + 1
+            if int(userAnswer) == int(correctAnswer):
+                score = score + 1
+                print("Answer is correct")
+            else:
+                print("Answer is incorrect")
+        null = input("Press enter to continue ")
+    elif int(gamemode) == 3:
+        os.system('cls')
+        while int(turn) != 10:
+            os.system('cls')
+            num1 = random.randint(0,999)
+            num2 = random.randint(0,999)
+            correctAnswer = num1 / num2
+            print("Round:",turn,"Mode: Hard")
+            print("Equation: ",num1," ÷ ",num2)
+            print("")
+            userAnswer = input("What is the Answer ")
+            turn = turn + 1
+            if int(userAnswer) == int(correctAnswer):
+                score = score + 1
+                print("Answer is correct")
+            else:
+                print("Answer is incorrect")
+        null = input("Press enter to continue ")
+    elif int(gamemode) == 4:
+        os.system('cls')
+        while int(turn) != 10:
+            os.system('cls')
+            num1 = random.randint(0,9999)
+            num2 = random.randint(0,9999)
+            correctAnswer = num1 / num2
+            print("Round:",turn,"Mode: Very Hard")
+            print("Equation: ",num1," ÷ ",num2)
             print("")
             userAnswer = input("What is the Answer ")
             turn = turn + 1

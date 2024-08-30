@@ -10,6 +10,8 @@ print("  \_____\___/|_| |_| |_|_| |_| |_|\__,_|_| |_|\__,_| |______|_|_| |_|\___
 print("")
 print("1. Random Number Guessing Game")
 print("2. Harry Potter Duel Sim")
+print("3. Math Game")
+print("4. Rock/Paper/Scissors")
 selection = input("What game would you like to play ")
 
 if ((int(selection)) == 1):
@@ -18,6 +20,12 @@ if ((int(selection)) == 1):
 elif ((int(selection)) == 2):
     print("Luanching Game")
     os.system("python HarryPotter.py")
+elif ((int(selection)) == 3):
+    print("Luanching Game")
+    os.system("python Multiplication Game.py")
+elif ((int(selection)) == 4):
+    print("Luanching Game")
+    os.system("python Rock,Paper,Scissors.py")
 else:
     os.system('cls')
     print("      __ _ ")
